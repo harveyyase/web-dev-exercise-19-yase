@@ -1,0 +1,79 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Arial', sans-serif;
+    color: #4D2C3D;
+    background: url('https://img.freepik.com/free-vector/abstract-watercolor-background_23-2149038179.jpg?semt=ais_hybrid') no-repeat center center fixed;
+    background-size: cover;
+    animation: fadeIn 1.5s ease-out;
+}
+
+.qnabox {
+    max-width: 900px;
+    margin: 30px auto;
+    padding: 20px;
+    background: rgba(255, 232, 219, 0.9);
+    border-radius: 12px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.4);
+    animation: fadeIn 2s ease-out;
+    border: 2px solid #E36B6B;
+}
+
+header {
+    background: linear-gradient(135deg, #E36B6B, #C24646);
+    padding: 30px;
+    text-align: center;
+    font-size: 2.8em;
+    color: #FFF3E1;
+    text-shadow: 3px 3px 10px rgba(0, 0, 0, 0.7);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.6);
+    border-bottom: 4px solid #D04A4A;
+}
+
+nav {
+    background: #222;
+    color: white;
+    padding: 15px 0;
+    text-align: center;
+    font-size: 1.2em;
+    letter-spacing: 1px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4);
+}
+
+.section {
+    background: linear-gradient(135deg, #FBC8A2, #EB8F76);
+    color: #4D2C3D;
+    padding: 15px;
+    width: 100%;
+    font-size: 1.2em;
+    text-align: left;
+    border: none;
+    cursor: pointer;
+    margin-bottom: 15px;
+    transition: all 0.3s ease;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.3);
+    border-radius: 8px;
+}
+
+.section:hover {
+    background: #E78F8E;
+    transform: translateY(-3px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.4);
+}
+
+.section-content {
+    display: none;
+    background: rgba(233, 172, 146, 0.95);
+    padding: 20px;
+    border-radius: 6px;
+    animation: fadeIn 0.5s ease-in-out;
+}
+
+.section-content.show {
+    display: block;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}

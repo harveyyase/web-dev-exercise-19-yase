@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interactive Portfolio</title>
+    <link rel="stylesheet" href="styles.css" />
+      
+</head>
+<body>
+    <header>
+        <h1>My Portfolio</h1>
+    </header>
+    <nav>
+        Home | About | Projects | Contact
+    </nav>
+    <main class="qnabox">
+        <h2>About Me</h2>
+        <p>My name is Harvey Gabriele S. Yase, a student in USC studying BSIS. Passionate about programming and computers, this simple html will tell you more about myself.</p>
+    </main>
+    <div class="qnabox">
+        <button class="section" onclick="togglesection('section1')">1.Why I chose BSIS for my course?</button>
+        <div id="section1" class="section-content">
+            <p>I wasn't actually going to choose BSIS, i picked CS for my course but ended up flunking the entrance exam which is now why I am here, but after researching about this course and some things I'd rather not say happen, it only made me want to chose BSIS because my friends told me it's basically just like IT with some minor differences. I don't really think it would matter if I chose CS, IT, or IS because in the near future I'd want to make and develop video games with friends and possibly my girlfriend. (And also maybe try business).</p>
+        </div>
+        <button class="section" onclick="togglesection('section2')">2.Interesting facts about me:</button>
+        <div id="section2" class="section-content">
+            <p>I am diagnosed with a kidney disease called nephrotic syndrome and currently have a stent(tube) in my kidneys to control the workflow of my kidneys, I also have a fistula on my left arm which is the reason why I am not allowed to do extreaneous activities, and also the reason why I picked tech related courses, because I was initially going into mechanical engineering or a seaman same as my father. I am the eldest in my family with 1 sister, my mother is a teacher and my father is a seaman.</p>
+        </div>
+        <button class="section" onclick="togglesection('projects')">3. My Projects 🚀</button>
+        <div id="projects" class="section-content">
+            <p>Here are some projects I've worked on (examples rani ms dli tanan tinood): <br> - Personal Portfolio Website <br> - Christmas Gift using HTML, CSS, and JS <br> - Chatbot using Python<br> - Database system for a company<br> - RPG Game in C# </p>
+        </div>
+        <button class="section" onclick="togglesection('likes')">4. My Likes ❤️</button>
+        <div id="likes" class="section-content">
+            <p>Things I love: <br> - Playing video games 🎮 <br> - My girlfriend 💖 <br> - Food 🍔 <br> - Swimming 🏊 <br> - Money 💰</p>
+        </div>
+        <button class="section" onclick="togglesection('dislikes')">5. My Dislikes 😖</button>
+        <div id="dislikes" class="section-content">
+            <p>Things I dislike: <br> - Gross things 🤢 <br> - People with no sense of personal space 🚶‍♂️ <br> - Bad internet 🌐</p>
+        </div>
+        <button class="section" onclick="togglesection('contact')">6. Contact Me 📬</button>
+        <div id="contact" class="section-content">
+            <p>You can reach me at: <br> - Email: harvey.yase@example.com <br> - GitHub: github.com/HarveyYase <br> - LinkedIn: linkedin.com/in/HarveyYase</p>
+        </div>
+    </div>
+
+    <script>
+        function togglesection(id) {
+            var section = document.getElementById(id);
+            if (section.classList.contains('show')) {
+                section.classList.remove('show');
+            } else {
+                section.classList.add('show');
+            }
+        }
+    </script>
+</body>
+</html>
